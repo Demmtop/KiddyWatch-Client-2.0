@@ -1,0 +1,152 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.vbox {
+	-fx-spacing: 5.0px;
+}
+.vbox_ButtonLabel{
+	-fx-alignment: bottom-center;
+	-fx-translate-y: 10.0px; 
+}
+
+.vbox_ButtonLabel > Label{
+	-fx-alignment: bottom-center;
+	-fx-text-fill: white;
+    -fx-font-size: 10.0px;
+    -fx-font-weight: bold; 
+}
+
+.hbox {
+	-fx-spacing: 5.0px;
+}
+
+.stackPane {
+	-fx-padding: 5.0px;
+	-fx-background-color: #828e9a;
+	-fx-border-color: rgb(0.0,0.0,64.0);
+	-fx-border-width: 2.0px 0.0px 2.0px 2.0px;
+}
+
+.paneMenu{
+	-fx-background-color: #828e9a;
+	-fx-border-color: rgb(0.0,0.0,64.0);
+	-fx-border-width: 2.0px 2.0px 2.0px 0.0px;
+}
+
+.rectMenu {
+	-fx-fill: #828e9a;
+	-fx-stroke: rgb(0.0,0.0,64.0);
+	-fx-stroke-type: inside ;
+	-fx-stroke-width: 2.0px;
+	-fx-arc-width: 20.0px ;	
+	-fx-arc-height: 20.0px ;
+}
+
+.rectDummyMenu {
+	-fx-fill: #828e9a;
+	-fx-stroke-width: 0.0px;
+}
+.menuButton {
+    -fx-alignment: bottom-center;
+    -fx-background-insets: 0.0,1.0,2.0,3.0;
+    -fx-background-radius: 3.0,2.0,2.0,2.0;
+    -fx-padding: 0.0 10.0 15.0 10.0;
+    -fx-pref-height: 80.0px;
+    -fx-pref-width: 100.0px;
+    -fx-text-fill: white;
+    -fx-font-size: 10.0px;
+    -fx-font-weight: bold; 
+}
+.mainMenuButton{
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#395cab, #223768);
+}
+
+.submenuButton, .mainMenuButton:selected {
+	-fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f);
+}
+
+.dummyButton {
+	-fx-background-color: transparent;
+    -fx-background-insets: 0.0,1.0,2.0,3.0;
+    -fx-background-radius: 3.0,2.0,2.0,2.0;
+    -fx-padding: 0.0 10.0 15.0 10.0;
+    -fx-pref-height: 80.0px;
+    -fx-pref-width: 100.0px;
+}
+.backGroundPosition {
+	-fx-background-size: auto ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 35.0px 15.0px;
+}
+.bt_masterData {          
+    -fx-background-image: url("../images/address_book-32x32.png");
+}
+
+.bt_financeData {          
+    -fx-background-image: url("../images/money-32x32.png");
+}
+
+.bt_documentManagement {          
+    -fx-background-image: url("../images/cabinet-32x32.png");
+}
+
+.bt_systemSettings {          
+    -fx-background-image: url("../images/server-32x32.png");
+}
+
+.bt_groupData {          
+    -fx-background-image: url("../images/group-32x32.png");
+}
+.bt_group {          
+    -fx-background-image: url("../images/group_edit-32x32.png");
+}
+.bt_children {          
+    -fx-background-image: url("../images/children_edit-32x32.png");
+}
+
+.bt_parent {          
+    -fx-background-image: url("../images/parent_edit-32x32.png");
+}
+
+.bt_dayCareCaenter {          
+    -fx-background-image: url("../images/kita_edit-32x32.png");
+}
+
+.bt_doctor {          
+    -fx-background-image: url("../images/doctor_edit-32x32.png");
+}
+
+.bt_cockpit {          
+    -fx-background-image: url("../images/cockpit-32x32.png");
+}
+
+.bt_manpower {          
+    -fx-background-image: url("../images/employee_edit-32x32.png");
+}
+.bt_childCost {          
+    -fx-background-image: url("../images/money2_edit-32x32.png");
+}
+.bt_documentEdit {          
+    -fx-background-image: url("../images/cabinet_open-32x32.png");
+}
+.bt_numberRange {          
+    -fx-background-image: url("../images/cabinet_open-32x32.png");
+}
+.bt_calendar {          
+    -fx-background-image: url("../images/calendar-32x32.png");
+}
+.bt_setting {          
+    -fx-background-image: url("../images/gears-32x32.png");
+}
+.bt_import {          
+    -fx-background-image: url("../images/data_into-32x32.png");
+}
+.bt_workJob {          
+    -fx-background-image: url("../images/paper_box-32x32.png");
+}
+.bt_finance {          
+    -fx-background-image: url("../images/money_envelope_edit-32x32.png");
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.CalendarSelector?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.lang.String?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane styleClass="popover-header" stylesheets="@../../../css/calendar.css" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.demmtop.calendar.controller.EntryPopoverController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" valignment="TOP" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" valignment="TOP" vgrow="SOMETIMES" />
+      <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="entryTitle" stylesheets="@../../../css/calendar.css" text="Hello">
+         <styleClass>
+            <String fx:value="default-style-entry-popover-title" />
+            <String fx:value="title" />
+         </styleClass>
+      </TextField>
+      <TitledPane fx:id="paneInfo" expanded="false" text="Zusatzinformationen" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+         <content>
+            <TextArea fx:id="entryInfo" prefHeight="150.0" prefWidth="400.0" />
+         </content>
+      </TitledPane>
+      <TitledPane text="Details" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <content>
+            <GridPane hgap="15.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" valignment="BOTTOM" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" valignment="BOTTOM" vgrow="NEVER" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <Label text="Ganztägig:" />
+                  <Label text="Von:" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                  <Label text="Bis:" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                  <CheckBox fx:id="entryFullDay" mnemonicParsing="false" GridPane.columnIndex="1" />
+                  <JFXDatePicker fx:id="entryFromDate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <JFXDatePicker fx:id="entryToDate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <JFXTimePicker fx:id="entryFromTime" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <JFXTimePicker fx:id="entryToTime" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="Wiederholung:" GridPane.rowIndex="3" />
+                  <MenuButton fx:id="recurrenceButton" mnemonicParsing="false" text="Ohne" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </content>
+      </TitledPane>
+      <CalendarSelector fx:id="calendarSelector" GridPane.columnIndex="1" />
+    </children>
+</GridPane>

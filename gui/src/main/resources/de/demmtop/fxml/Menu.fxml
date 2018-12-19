@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane fx:id="stackPane" alignment="CENTER_RIGHT" styleClass="stackPane" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.demmtop.main.controller.MenuController">
+	<children>
+		<VBox fx:id="vbox_masterData" translateX="-225.0">
+			<children>
+				<HBox styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+						<VBox layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button fx:id="bt_register" mnemonicParsing="false" onAction="#actionRegister" stylesheets="@../css/Menu.css" text="Voranmeldung">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_register" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_children" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Kinder">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_children" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_parent" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Eltern">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_parent" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_doctor" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Hausarzt">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_doctor" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_dayCareCenter" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Kita">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_dayCareCaenter" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_cockpitMasterData" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Cockpit">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_cockpit" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox fx:id="vbox_groupData" translateX="-225.0">
+			<children>
+				<HBox styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+						<VBox layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button fx:id="bt_group" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Gruppen">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_group" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_cockpitGroup" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Cockpit">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_cockpit" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox fx:id="vbox_financeData" translateX="-225.0">
+			<children>
+				<HBox styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+						<VBox layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button fx:id="bt_finance" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Finanzdaten">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_finance" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_childCost" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Kinderkosten">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_childCost" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_cockpitFinance" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Cockpit">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_cockpit" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox fx:id="vbox_documentManagement" translateX="-225.0">
+			<children>
+				<HBox styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+						<VBox layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button fx:id="bt_documentEdit" mnemonicParsing="false" stylesheets="@../css/Menu.css">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_documentEdit" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+									<graphic>
+										<VBox alignment="BOTTOM_CENTER" styleClass="vbox_ButtonLabel" stylesheets="@../css/Menu.css">
+											<children>
+												<Label text="Dokumente" />
+												<Label text="verwalten" />
+											</children>
+										</VBox>
+									</graphic>
+								</Button>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox fx:id="vbox_systemSettings" translateX="-225.0">
+			<children>
+				<HBox styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+						<VBox layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+								<Button fx:id="bt_numberRange" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Nummernkreis">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_numberRange" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_calendar" mnemonicParsing="false" onAction="#openCalendar" stylesheets="@../css/Menu.css" text="Kalendar">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_calendar" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_setting" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Einstellungen">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_setting" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+								<Button fx:id="bt_workJob" mnemonicParsing="false" stylesheets="@../css/Menu.css">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_workJob" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+									<graphic>
+										<VBox alignment="BOTTOM_CENTER" styleClass="vbox_ButtonLabel" stylesheets="@../css/Menu.css">
+											<children>
+												<Label text="Verarbeitungs-" />
+												<Label text="aufträge" />
+											</children>
+										</VBox>
+									</graphic>
+								</Button>
+								<Button fx:id="bt_import" mnemonicParsing="false" stylesheets="@../css/Menu.css" text="Import">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="submenuButton" />
+										<String fx:value="bt_import" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</Button>
+							</children>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+		<VBox fx:id="vbox_menu">
+			<children>
+				<HBox fx:id="hbox_menu" styleClass="hbox" stylesheets="@../css/Menu.css">
+					<children>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css" visible="false">
+							<children>
+								<Button mnemonicParsing="false" styleClass="dummyButton" stylesheets="@../css/Menu.css" />
+							</children>
+						</VBox>
+						<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="vbox" stylesheets="@../css/Menu.css">
+							<children>
+								<ToggleButton fx:id="bt_masterData" mnemonicParsing="false" onAction="#menuAction" stylesheets="@../css/Menu.css" text="Stammdaten">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="mainMenuButton" />
+										<String fx:value="bt_masterData" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</ToggleButton>
+								<ToggleButton fx:id="bt_groupData" mnemonicParsing="false" onAction="#menuAction" stylesheets="@../css/Menu.css" text="Gruppen">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="mainMenuButton" />
+										<String fx:value="bt_groupData" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</ToggleButton>
+								<ToggleButton fx:id="bt_financeData" mnemonicParsing="false" onAction="#menuAction" stylesheets="@../css/Menu.css" text="Finanzdaten">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="mainMenuButton" />
+										<String fx:value="bt_financeData" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+								</ToggleButton>
+								<ToggleButton fx:id="bt_documentManagement" mnemonicParsing="false" onAction="#menuAction" stylesheets="@../css/Menu.css">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="mainMenuButton" />
+										<String fx:value="bt_documentManagement" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+									<graphic>
+										<VBox alignment="BOTTOM_CENTER" styleClass="vbox_ButtonLabel" stylesheets="@../css/Menu.css">
+											<children>
+												<Label text="Dokumenten-" />
+												<Label text="verwaltung" />
+											</children>
+										</VBox>
+									</graphic>
+								</ToggleButton>
+								<ToggleButton fx:id="bt_systemSettings" mnemonicParsing="false" onAction="#menuAction" stylesheets="@../css/Menu.css">
+									<styleClass>
+										<String fx:value="menuButton" />
+										<String fx:value="mainMenuButton" />
+										<String fx:value="bt_systemSettings" />
+										<String fx:value="backGroundPosition" />
+									</styleClass>
+									<graphic>
+										<VBox alignment="BOTTOM_CENTER" styleClass="vbox_ButtonLabel" stylesheets="@../css/Menu.css">
+											<children>
+												<Label text="System-" />
+												<Label text="einstellung" />
+											</children>
+										</VBox>
+									</graphic>
+								</ToggleButton>
+							</children>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</VBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</StackPane>

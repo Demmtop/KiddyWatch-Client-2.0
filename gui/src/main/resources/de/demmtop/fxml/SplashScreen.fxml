@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.demmtop.main.controller.SplashScreenController">
+	<center>
+		<ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+			<image>
+				<Image url="@../images/kiddywatch_logo.png" />
+			</image>
+		</ImageView>
+	</center>
+   <bottom>
+      <BorderPane BorderPane.alignment="CENTER">
+         <center>
+            <Text fx:id="version" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <FlowPane alignment="BOTTOM_RIGHT" columnHalignment="RIGHT" hgap="5.0" rowValignment="BOTTOM" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Build:">
+                     <FlowPane.margin>
+                        <Insets />
+                     </FlowPane.margin></Text>
+                  <Text fx:id="build" strokeType="OUTSIDE" strokeWidth="0.0" text="112045" />
+               </children>
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </FlowPane>
+         </bottom>
+      </BorderPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<StackPane fx:id="stackPane" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.demmtop.main.controller.MainFrameController">
+	<children>
+      <SplitPane id="sp_pane" dividerPositions="0.5">
+        <items>
+          <AnchorPane id="rightNode" maxWidth="30.0" minHeight="0.0" minWidth="30.0" />
+         </items>
+      </SplitPane>
+		<HBox fx:id="hBox" alignment="CENTER_LEFT" maxWidth="250.0" onMouseExited="#closeMenu" translateX="-215.0">
+			<children>
+				<fx:include fx:id="menu" source="Menu.fxml" />
+				<StackPane maxWidth="30.0" minWidth="30.0" stylesheets="@../css/Menu.css">
+					<children>
+						<Rectangle fx:id="rect_tab" arcHeight="20.0" arcWidth="20.0" fill="DODGERBLUE" height="100.0" onMouseEntered="#openMenu" stroke="BLACK" strokeType="INSIDE" styleClass="rectMenu" width="25.0" StackPane.alignment="CENTER_LEFT" />
+						<Pane maxWidth="10.0" onMouseExited="#closeMenu" styleClass="paneMenu" StackPane.alignment="CENTER_LEFT" />
+						<Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="96.0" onMouseExited="#closeMenu" stroke="BLACK" strokeType="INSIDE" styleClass="rectDummyMenu" width="18.0" StackPane.alignment="CENTER_LEFT" />
+						<Text fx:id="tab_font" fill="#f8f4f4" onMouseEntered="#openMenu" rotate="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menü" translateX="-6.0">
+							<font>
+								<Font name="System Bold" size="23.0" />
+							</font>
+							<StackPane.margin>
+								<Insets />
+							</StackPane.margin>
+						</Text>
+					</children>
+				</StackPane>
+			</children>
+			<padding>
+				<Insets left="-2.0" />
+			</padding>
+		</HBox>
+	</children>
+</StackPane>

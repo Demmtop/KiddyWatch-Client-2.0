@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#version {
+    -fx-font-weight: bold;
+}
+
+FlowPane {
+	-fx-padding: 0.0px 15.0px 0.0px 0.0px;
+	-fx-hgap: 5px; 
+}
+
+BorderPane {
+	-fx-background-radius: 10;
+	-fx-background-color: white;
+}
+

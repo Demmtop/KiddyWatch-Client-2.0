@@ -1,0 +1,39 @@
+<configuration>
+    <authentication-client xmlns="urn:elytron:1.0">
+        <authentication-rules>
+            <rule use-configuration="default"/>
+        </authentication-rules>
+        <authentication-configurations>
+            <configuration name="default">
+                <sasl-mechanism-selector selector="DIGEST-MD5"/>
+                <set-user-name name="KiddyWatchEjb"/>
+                <credentials>
+                    <clear-password password="wildflyejb2010"/>
+                </credentials>
+            </configuration>
+        </authentication-configurations>
+    </authentication-client>  
+</configuration>
+<!-- <configuration>
+    <authentication-client xmlns="urn:elytron:1.0">
+        <authentication-rules>
+                    <rule use-configuration="default" />
+        </authentication-rules>
+        <authentication-configurations>
+            <configuration name="default">
+                <sasl-mechanism-selector selector="#ALL" />
+                <set-mechanism-properties>
+                    <property key="wildfly.sasl.local-user.quiet-auth" value="true" />
+                 </set-mechanism-properties>
+                <providers>
+                    <use-service-loader/>
+                </providers>
+             </configuration>
+        </authentication-configurations>
+    </authentication-client>
+    <endpoint xmlns="urn:jboss-remoting:5.0">
+        <connections>
+            <connection destination="http-remoting://172.0.0.1:8080" read-timeout="50" write-timeout="50" heartbeat-interval="10000"/>
+        </connections>
+    </endpoint>
+</configuration>-->
